@@ -5,13 +5,19 @@ A simple example web app to display a list of users with the ability to add new 
 * Front end: ReactJS / Thymeleaf + Bootstrap
 * Back end: Spring Boot using Spring Data Rest, JPA, Thymeleaf, Lombok and H2 database
 
+Run with
+```
+./mvnw spring-boot:run
+```
+on Unix, or double-click on `mvnw.cmd` in Windows.
+
 The filtering is performed on the back end, which means a new page is loaded rather than being updated in-place.
 
 ### Upgrade list
 
 * Add paging: only displays 20 entries
 * No error checking: it's possible to add blank users
-* No delete capability
+* No delete or update capability
 * Text inputs are not sanitized
 
 ### Security
