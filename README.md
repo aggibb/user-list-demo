@@ -26,4 +26,4 @@ The Spring security module (and the corresponding Thymeleaf extras) allows the a
 
 A new entity for one or more user accounts would be added, passwords would be encrypted with Bcrypt and prevented from being returned in plain text.
 
-Classes for a UserDetailsService and SecurityConfiguration would be added, the latter of which contains the access rules.
+Classes for a UserDetailsService and SecurityConfiguration would be added, the latter of which contains access rules for determining which resources can be viewed publicly and which require a login.
