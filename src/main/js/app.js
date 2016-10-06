@@ -1,3 +1,6 @@
+// This code and the other javascript modules are borrowed from the following tutorial:
+// https://spring.io/guides/tutorials/react-and-spring-data-rest/
+// Only the code below has been customized for the current app
 'use strict';
 
 const React = require('react');
