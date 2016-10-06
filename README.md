@@ -13,6 +13,8 @@ on Unix, or double-click on `mvnw.cmd` in Windows.
 
 The filtering is performed on the back end, which means a new page is loaded rather than being updated in-place.
 
+Inspired by the tutorial at https://spring.io/guides/tutorials/react-and-spring-data-rest/
+
 ### Upgrade list
 
 * Add paging: only displays 20 entries
