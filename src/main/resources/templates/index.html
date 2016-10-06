@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <title>User list and update form</title>
+    <link rel="stylesheet"
+          type="text/css"
+          th:href="@{/css/bootstrap.min.css}"
+          href="../static/css/bootstrap.min.css"/>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <h2>User data page</h2>
+        <p>Use this page to add a new user, list all existing users, or search for a particular user</p>
+    </div>
+</div>
+<div id="react" class="container">
+</div>
+
+<div class="container">
+    <div class="row">
+        <h3>Filter list by user</h3>
+        <form class="form-inline" method="POST" th:action="@{/search}" th:object="${filterText}">
+            <div class="form-group">
+                <input type="text" placeholder="Name (or partial name)" ref="userName"
+                       class="form-control" th:field="${filterText.filterText}"/></div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </form>
+    </div>
+</div>
+
+<script src="built/bundle.js"></script>
+
+
+</body>
+</html>
