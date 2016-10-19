@@ -36,6 +36,6 @@ public class User {
     public User(String firstName, String lastName, String dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.dateOfBirth = LocalDate.parse(dateOfBirth, dateOfBirthFormat);
+        this.dateOfBirth = LocalDate.parse(dateOfBirth, dateOfBirthFormat); // need to catch an error if not formatted correctly
     }
 }
