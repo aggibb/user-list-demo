@@ -18,7 +18,7 @@ Inspired by the tutorial at https://spring.io/guides/tutorials/react-and-spring-
 ### Upgrade list
 
 * Add paging: only displays 20 entries
-* No error checking: it's possible to add blank users
+* No error checking: it's possible to add blank users or select future dates
 * No delete or update capability
 * Text inputs are not sanitized
 
