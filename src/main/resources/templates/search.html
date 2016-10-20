@@ -21,6 +21,9 @@
             <th>Date of Birth</th>
         </tr>
         </thead>
+        <tr th:if="${#lists.isEmpty(searchResults)}">
+            <td class="text-warning">No results</td>
+        </tr>
         <tr th:each="user : ${searchResults}">
             <td th:text="${user.firstName}">first name</td>
             <td th:text="${user.lastName}">last name</td>
