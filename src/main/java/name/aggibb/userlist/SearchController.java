@@ -37,10 +37,9 @@ public class SearchController {
         model.addAttribute("filterText", filterText);
         model.addAttribute("searchResults",
                 repository.findUsersByFirstNameContainsIgnoreCaseOrLastNameContainsIgnoreCase(
-                        filterText.getFilterText(), filterText.getFilterText()
+                        filterText.getNameText(), filterText.getNameText()
                 ));
         return "search";
-
     }
 
 }
