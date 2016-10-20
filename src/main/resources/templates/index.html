@@ -22,10 +22,13 @@
 <div class="container">
     <div class="row">
         <h3>Filter list by user</h3>
-        <form class="form-inline" method="POST" th:action="@{/search}" th:object="${filterText}">
+        <form class="form-inline" method="POST" th:action="@{/}" th:object="${filterText}">
+            <div class="text-warning" th:if="${#fields.hasErrors('nameText')}" th:errors="*{nameText}">Error</div>
             <div class="form-group">
                 <input type="text" placeholder="Name (or partial name)" ref="userName"
-                       class="form-control" th:field="${filterText.filterText}"/></div>
+                       class="form-control" th:field="*{nameText}"
+                />
+            </div>
             <button type="submit" class="btn btn-primary">Filter</button>
         </form>
     </div>
